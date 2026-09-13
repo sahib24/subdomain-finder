@@ -1,0 +1,10 @@
+backend/venv/
+frontend/node_modules/
+frontend/.next/
+__pycache__/
+*.pyc
+.env
+*.log
+
+backend/data/results.csv
+backend/data/results.json
