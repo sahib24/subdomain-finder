@@ -1,14 +1,41 @@
 
-from fastapi import FastAPI  # Import FastAPI
-import subprocess             # Run Subfinder
-import json                   # Create JSON file
-import csv                    # Create CSV file
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import FileResponse
+
+import subprocess
+import json
+import csv
+from concurrent.futures import ThreadPoolExecutor
+
+from active_dns import active_dns_discovery
+from dns_validation import validate_dns
+from http_validation import validate_http_https
 
 
-app = FastAPI()               # Create FastAPI application
+app = FastAPI()
 
 
+# --------------------------------
+# CORS
+# --------------------------------
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:3000",
+        "http://127.0.0.1:3000",
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+
+# --------------------------------
 # Home endpoint
+# --------------------------------
+
 @app.get("/")
 def home():
     return {
@@ -16,73 +43,177 @@ def home():
     }
 
 
-# Multiple domain scan endpoint
+# --------------------------------
+# Validate one subdomain
+# --------------------------------
+
+def validate_subdomain(subdomain):
+
+    # DNS validation
+    dns_valid = validate_dns(subdomain)
+
+    # Default HTTP result
+    http_result = {
+        "http_valid": False,
+        "url": None,
+        "status_code": None
+    }
+
+    # DNS valid হলে HTTP/HTTPS check করবে
+    if dns_valid:
+        http_result = validate_http_https(subdomain)
+
+    # Final live status
+    live = (
+        dns_valid
+        and
+        http_result["http_valid"]
+    )
+
+    return {
+        "subdomain": subdomain,
+        "dns_valid": dns_valid,
+        "http_valid": http_result["http_valid"],
+        "url": http_result["url"],
+        "status_code": http_result["status_code"],
+        "live": live
+    }
+
+
+# --------------------------------
+# Scan endpoint
+# --------------------------------
+
 @app.get("/scan")
 def scan(domains: str):
 
-    # Split comma-separated domains into a list
     domain_list = domains.split(",")
 
-    # Store results for all domains
     all_results = []
 
-    # Scan each domain one by one
+
     for domain in domain_list:
 
-        # Remove extra spaces
         domain = domain.strip()
 
-        # Skip empty domain values
         if not domain:
             continue
 
+
+        # --------------------------------
         # Run Subfinder
+        # --------------------------------
+
         result = subprocess.run(
             ["subfinder", "-d", domain],
             capture_output=True,
             text=True
         )
 
-        # Handle Subfinder error
+
+        # --------------------------------
+        # Subfinder error
+        # --------------------------------
+
         if result.returncode != 0:
+
             all_results.append({
                 "domain": domain,
                 "error": result.stderr
             })
+
             continue
 
-        # Get Subfinder output
+
+        # --------------------------------
+        # Passive subdomains
+        # --------------------------------
+
         output = result.stdout
 
-        # Convert output into a subdomain list
-        subdomains = output.strip().splitlines()
+        passive_subdomains = output.strip().splitlines()
 
-        # Remove duplicate subdomains
-        subdomains = list(set(subdomains))
+        passive_subdomains = list(
+            set(passive_subdomains)
+        )
 
-        # Save domain results
+
+        # --------------------------------
+        # Active DNS discovery
+        # --------------------------------
+
+        active_subdomains = active_dns_discovery(domain)
+
+
+        # --------------------------------
+        # Merge passive + active
+        # --------------------------------
+
+        all_subdomains = list(
+            set(
+                passive_subdomains +
+                active_subdomains
+            )
+        )
+
+
+        # --------------------------------
+        # PARALLEL VALIDATION
+        # --------------------------------
+
+        validated_results = []
+
+        with ThreadPoolExecutor(max_workers=10) as executor:
+
+            results = executor.map(
+                validate_subdomain,
+                all_subdomains
+            )
+
+            validated_results = list(results)
+
+
+        # --------------------------------
+        # Save domain result
+        # --------------------------------
+
         all_results.append({
             "domain": domain,
-            "count": len(subdomains),
-            "subdomains": subdomains
+            "count": len(validated_results),
+            "subdomains": validated_results
         })
 
-    # Create final result
+
+    # --------------------------------
+    # Final result
+    # --------------------------------
+
     final_result = {
         "total_domains": len(all_results),
         "results": all_results
     }
 
-    # -------------------------
-    # Save JSON file
-    # -------------------------
 
-    with open("data/results.json", "w", encoding="utf-8") as file:
-        json.dump(final_result, file, indent=2)
+    # --------------------------------
+    # JSON output
+    # --------------------------------
 
-    # -------------------------
-    # Save CSV file
-    # -------------------------
+    with open(
+        "data/results.json",
+        "w",
+        encoding="utf-8"
+    ) as file:
+
+        json.dump(
+            final_result,
+            file,
+            indent=2
+        )
+
+
+    # --------------------------------
+    # CSV output
+    # --------------------------------
 
     with open(
         "data/results.csv",
@@ -91,30 +222,78 @@ def scan(domains: str):
         encoding="utf-8"
     ) as file:
 
-        # Create CSV writer
         writer = csv.writer(file)
 
-        # Write CSV header
-        writer.writerow(["domain", "subdomain"])
 
-        # Process each domain result
+        writer.writerow([
+            "domain",
+            "subdomain",
+            "dns_valid",
+            "http_valid",
+            "url",
+            "status_code",
+            "live"
+        ])
+
+
         for item in all_results:
 
-            # Write error to CSV if scan failed
+            # Subfinder error
             if "error" in item:
+
                 writer.writerow([
                     item["domain"],
-                    "ERROR"
+                    "ERROR",
+                    False,
+                    False,
+                    "",
+                    "",
+                    False
                 ])
+
                 continue
 
-            # Write each subdomain to CSV
-            for subdomain in item["subdomains"]:
+
+            # Normal results
+            for result in item["subdomains"]:
+
                 writer.writerow([
                     item["domain"],
-                    subdomain
+                    result["subdomain"],
+                    result["dns_valid"],
+                    result["http_valid"],
+                    result["url"] or "",
+                    result["status_code"] or "",
+                    result["live"]
                 ])
 
-    # Return results as JSON response
+
     return final_result
 
+
+# --------------------------------
+# JSON Download
+# --------------------------------
+
+@app.get("/download/json")
+def download_json():
+
+    return FileResponse(
+        "data/results.json",
+        media_type="application/json",
+        filename="results.json"
+    )
+
+
+# --------------------------------
+# CSV Download
+# --------------------------------
+
+@app.get("/download/csv")
+def download_csv():
+
+    return FileResponse(
+        "data/results.csv",
+        media_type="text/csv",
+        filename="results.csv"
+    )
