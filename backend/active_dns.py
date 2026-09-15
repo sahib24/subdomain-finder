@@ -1,13 +1,51 @@
 import dns.resolver
+from concurrent.futures import ThreadPoolExecutor
 
 
 # --------------------------------
-# Active DNS Discovery Function
+# Settings
+# --------------------------------
+
+DNS_TIMEOUT = 1
+MAX_WORKERS = 10
+
+
+# --------------------------------
+# Check Single Subdomain
+# --------------------------------
+
+def check_subdomain(subdomain, domain):
+
+    full_domain = f"{subdomain}.{domain}"
+
+    try:
+
+        answers = dns.resolver.resolve(
+            full_domain,
+            "A",
+            lifetime=DNS_TIMEOUT
+        )
+
+        print(f"[FOUND] {full_domain}")
+
+        for answer in answers:
+            print(f"       IP: {answer}")
+
+        return full_domain
+
+    except Exception:
+
+        print(f"[NOT FOUND] {full_domain}")
+
+        return None
+
+
+# --------------------------------
+# Active DNS Discovery
 # --------------------------------
 
 def active_dns_discovery(domain):
 
-    # Common subdomain names
     subdomains = [
         "www",
         "mail",
@@ -21,41 +59,26 @@ def active_dns_discovery(domain):
         "portal"
     ]
 
-    # Found subdomain এখানে রাখবে
     found_subdomains = []
 
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
 
-    # প্রতিটি subdomain check করবে
-    for subdomain in subdomains:
-
-        # Full domain তৈরি করবে
-        full_domain = f"{subdomain}.{domain}"
-
-        try:
-
-            # DNS A record query করবে
-            answers = dns.resolver.resolve(
-                full_domain,
-                "A"
+        futures = [
+            executor.submit(
+                check_subdomain,
+                subdomain,
+                domain
             )
+            for subdomain in subdomains
+        ]
 
-            # DNS resolve হলে list-এ রাখবে
-            found_subdomains.append(full_domain)
+        for future in futures:
 
-            print(f"[FOUND] {full_domain}")
+            result = future.result()
 
-            # IP address দেখাবে
-            for answer in answers:
-                print(f"       IP: {answer}")
+            if result:
+                found_subdomains.append(result)
 
-
-        except Exception:
-
-            # DNS resolve না হলে
-            print(f"[NOT FOUND] {full_domain}")
-
-
-    # Found subdomain return করবে
     return found_subdomains
 
 

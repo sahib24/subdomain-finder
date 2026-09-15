@@ -1,0 +1,2523 @@
+{
+  "total_domains": 1,
+  "results": [
+    {
+      "domain": "bondstein.net",
+      "count": 132,
+      "subdomains": [
+        {
+          "subdomain": "bup-bms-backend.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "148.113.6.224"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "ns5022197.ip-148-113-6.net"
+          ],
+          "http_valid": true,
+          "url": "https://bup-bms-backend.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "ral.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "146.59.85.92"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "ns31544715.ip-146-59-85.eu"
+          ],
+          "http_valid": true,
+          "url": "https://ral.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "wantedai.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "161.248.246.192"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": true,
+          "url": "https://wantedai.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "www.nsuaa.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "smarter-spaces.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "nsuaa.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "etp.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "threewheeler.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "agro.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "148.113.6.224"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "ns5022197.ip-148-113-6.net"
+          ],
+          "http_valid": true,
+          "url": "https://agro.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "rcredit-ppk.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "bcrp.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "rcredit.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "161.248.247.179"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": true,
+          "url": "https://rcredit.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "vms.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "148.113.6.224"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "ns5022197.ip-148-113-6.net"
+          ],
+          "http_valid": true,
+          "url": "https://vms.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "wanted-staging-front.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "tech.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "smart-charger.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "brta.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "161.248.246.192"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "smartbox.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "old.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "bcharge-dl.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "148.113.6.224"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "ns5022197.ip-148-113-6.net"
+          ],
+          "http_valid": true,
+          "url": "https://bcharge-dl.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "bms.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "148.113.6.224"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "ns5022197.ip-148-113-6.net"
+          ],
+          "http_valid": true,
+          "url": "https://bms.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "mip.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "standard-group-frs.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "blport.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "tdstest.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "103.95.211.29"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": true,
+          "url": "https://tdstest.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "rvt.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "161.248.247.179"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": true,
+          "url": "https://rvt.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "plc.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "tcp.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "161.248.247.179"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": true,
+          "url": "https://tcp.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "test-react.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "148.113.6.224"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [
+              "10 mail.bondstein.net."
+            ],
+            "NS": [
+              "ns1.bondstein.net.",
+              "ns2.bondstein.net."
+            ],
+            "TXT": [
+              "\"v=spf1 +a +mx +a:tech.singularitybd.co -all\""
+            ]
+          },
+          "reverse_dns": [
+            "ns5022197.ip-148-113-6.net"
+          ],
+          "http_valid": true,
+          "url": "https://bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "cpanel.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "brac-cin.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "starlink.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "db-rml.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "146.59.85.138"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "ns31544930.ip-146-59-85.eu"
+          ],
+          "http_valid": true,
+          "url": "https://db-rml.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "ocpp.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "starlink-backend.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "ns2.tech.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "threewheller.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "unilever.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "148.113.6.224"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "ns5022197.ip-148-113-6.net"
+          ],
+          "http_valid": true,
+          "url": "https://unilever.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "dtca.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "148.113.6.224"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "ns5022197.ip-148-113-6.net"
+          ],
+          "http_valid": true,
+          "url": "https://dtca.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "stairs-ai.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "148.113.6.224"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "ns5022197.ip-148-113-6.net"
+          ],
+          "http_valid": true,
+          "url": "http://stairs-ai.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "kds-front.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "148.113.6.224"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "ns5022197.ip-148-113-6.net"
+          ],
+          "http_valid": true,
+          "url": "https://kds-front.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "webmail.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "148.113.6.224"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "ns5022197.ip-148-113-6.net"
+          ],
+          "http_valid": true,
+          "url": "https://webmail.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "tmv-dealer.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "146.59.85.92"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "ns31544715.ip-146-59-85.eu"
+          ],
+          "http_valid": true,
+          "url": "https://tmv-dealer.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "babylon.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "148.113.6.224"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "ns5022197.ip-148-113-6.net"
+          ],
+          "http_valid": true,
+          "url": "https://babylon.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "www.tmvbd.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "buzzer-hospital-ai.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "148.113.6.224"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "ns5022197.ip-148-113-6.net"
+          ],
+          "http_valid": true,
+          "url": "https://buzzer-hospital-ai.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "tmvbd.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "161.248.247.179"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": true,
+          "url": "https://tmvbd.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "unilever-argus.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "148.113.6.224"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "ns5022197.ip-148-113-6.net"
+          ],
+          "http_valid": true,
+          "url": "https://unilever-argus.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "tds3-db.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "185.73.11.218"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "brixlyvps3.bondstein.info"
+          ],
+          "http_valid": true,
+          "url": "https://tds3-db.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "ids.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "www.dotnet-backend.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "pulse.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "161.248.246.192"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": true,
+          "url": "https://pulse.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "bat.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "test.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "batbd.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "frs-test.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "records.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "148.113.6.224"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "ns5022197.ip-148-113-6.net"
+          ],
+          "http_valid": true,
+          "url": "https://records.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "www.strategic.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "ns2.tmv.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "frs.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "148.113.6.224"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "ns5022197.ip-148-113-6.net"
+          ],
+          "http_valid": true,
+          "url": "https://frs.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "db-ral.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "146.59.85.92"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "ns31544715.ip-146-59-85.eu"
+          ],
+          "http_valid": true,
+          "url": "https://db-ral.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "sbapi.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "161.248.246.192"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": true,
+          "url": "https://sbapi.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "wanted-staging-backend.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "148.113.6.224"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "ns5022197.ip-148-113-6.net"
+          ],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "laraveldemo.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "cicd.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "test1.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "middleware.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "161.248.246.192"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": true,
+          "url": "https://middleware.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "sfmsbup.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "148.113.6.224"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "ns5022197.ip-148-113-6.net"
+          ],
+          "http_valid": true,
+          "url": "https://sfmsbup.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "dealer.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "146.59.85.92"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "ns31544715.ip-146-59-85.eu"
+          ],
+          "http_valid": true,
+          "url": "https://dealer.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "db-rvt.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "161.248.247.179"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": true,
+          "url": "https://db-rvt.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "kds.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "161.248.247.179"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": true,
+          "url": "https://kds.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "mail.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "148.113.6.224"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "ns5022197.ip-148-113-6.net"
+          ],
+          "http_valid": true,
+          "url": "http://mail.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "byd-ai.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "143.198.211.237"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "bondstein.ai.dev"
+          ],
+          "http_valid": true,
+          "url": "https://byd-ai.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "cmd.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "148.113.6.224"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "ns5022197.ip-148-113-6.net"
+          ],
+          "http_valid": true,
+          "url": "https://cmd.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "ns1.tech.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "invoices.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "robintex.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "146.59.85.138"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "ns31544930.ip-146-59-85.eu"
+          ],
+          "http_valid": true,
+          "url": "https://robintex.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "rml4.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "146.59.85.138"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "ns31544930.ip-146-59-85.eu"
+          ],
+          "http_valid": true,
+          "url": "https://rml4.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "cin.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "27.147.219.147"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "219.147.cetus.link3.net"
+          ],
+          "http_valid": true,
+          "url": "https://cin.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "db-rml-pg.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "146.59.85.138"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "ns31544930.ip-146-59-85.eu"
+          ],
+          "http_valid": true,
+          "url": "https://db-rml-pg.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "db-tmv.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "161.248.246.192"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": true,
+          "url": "https://db-tmv.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "test-node.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "ev-fetcher.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "146.59.85.92"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "ns31544715.ip-146-59-85.eu"
+          ],
+          "http_valid": true,
+          "url": "https://ev-fetcher.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "stitch.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "148.113.6.224"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "ns5022197.ip-148-113-6.net"
+          ],
+          "http_valid": true,
+          "url": "https://stitch.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "beta.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "starlinks.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "ims.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "161.248.247.179"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": true,
+          "url": "https://ims.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "cpcalendars.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "frs-new.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "vision-analysis-demo.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "ns1.tmv.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "pgh.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "bvt4.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "146.59.85.92"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "ns31544715.ip-146-59-85.eu"
+          ],
+          "http_valid": true,
+          "url": "https://bvt4.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "scout-event.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "se.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "mjl-demo.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "148.113.6.224"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "ns5022197.ip-148-113-6.net"
+          ],
+          "http_valid": true,
+          "url": "https://mjl-demo.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "b-charging.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "146.59.85.92"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "ns31544715.ip-146-59-85.eu"
+          ],
+          "http_valid": true,
+          "url": "https://b-charging.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "vms-backend.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "148.113.6.224"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "ns5022197.ip-148-113-6.net"
+          ],
+          "http_valid": true,
+          "url": "https://vms-backend.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "leafsopdev.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "148.113.6.224"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "ns5022197.ip-148-113-6.net"
+          ],
+          "http_valid": true,
+          "url": "https://leafsopdev.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "ybx.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "mail.tmv.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "mail.tech.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "rvt4.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "161.248.247.179"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": true,
+          "url": "https://rvt4.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "bvt.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "146.59.85.92"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "ns31544715.ip-146-59-85.eu"
+          ],
+          "http_valid": true,
+          "url": "https://bvt.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "ns1.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "148.113.6.224"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "ns5022197.ip-148-113-6.net"
+          ],
+          "http_valid": true,
+          "url": "http://ns1.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "wanted-staging.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "161.248.246.192"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "tds3.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "185.73.11.218"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "brixlyvps3.bondstein.info"
+          ],
+          "http_valid": true,
+          "url": "https://tds3.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "terminal.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "161.248.247.179"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "dotnet-backend.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "autodiscover.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "microscope.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "148.113.6.224"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "ns5022197.ip-148-113-6.net"
+          ],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "mkc.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "146.59.85.138"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "ns31544930.ip-146-59-85.eu"
+          ],
+          "http_valid": true,
+          "url": "https://mkc.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "ns2.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "148.113.6.224"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "ns5022197.ip-148-113-6.net"
+          ],
+          "http_valid": true,
+          "url": "http://ns2.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "tds1-db.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "103.95.211.29"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": true,
+          "url": "https://tds1-db.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "certificate.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "148.113.6.224"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "ns5022197.ip-148-113-6.net"
+          ],
+          "http_valid": true,
+          "url": "https://certificate.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "cpcontacts.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "bsp-new.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "bsp.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "146.59.85.138"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "ns31544930.ip-146-59-85.eu"
+          ],
+          "http_valid": true,
+          "url": "https://bsp.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "pulsetest.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "lafarge.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "wanted.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "161.248.246.192"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": true,
+          "url": "https://wanted.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "dtca-backend.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "161.248.246.192"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": true,
+          "url": "https://dtca-backend.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "semiconductor.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "161.248.246.192"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": true,
+          "url": "https://semiconductor.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "rml.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "146.59.85.92"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "ns31544715.ip-146-59-85.eu"
+          ],
+          "http_valid": true,
+          "url": "https://rml.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "webdisk.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "plc-tcp.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "ral-service.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "tmv.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "strategic.bondstein.net",
+          "dns_valid": false,
+          "dns_records": {
+            "A": [],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [],
+          "http_valid": false,
+          "url": null,
+          "status_code": null,
+          "live": false
+        },
+        {
+          "subdomain": "unilever-backend.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "148.113.6.224"
+            ],
+            "AAAA": [],
+            "CNAME": [],
+            "MX": [],
+            "NS": [],
+            "TXT": []
+          },
+          "reverse_dns": [
+            "ns5022197.ip-148-113-6.net"
+          ],
+          "http_valid": true,
+          "url": "https://unilever-backend.bondstein.net",
+          "status_code": 200,
+          "live": true
+        },
+        {
+          "subdomain": "www.bondstein.net",
+          "dns_valid": true,
+          "dns_records": {
+            "A": [
+              "148.113.6.224"
+            ],
+            "AAAA": [],
+            "CNAME": [
+              "bondstein.net."
+            ],
+            "MX": [
+              "10 mail.bondstein.net."
+            ],
+            "NS": [
+              "ns1.bondstein.net.",
+              "ns2.bondstein.net."
+            ],
+            "TXT": [
+              "\"v=spf1 +a +mx +a:tech.singularitybd.co -all\""
+            ]
+          },
+          "reverse_dns": [
+            "ns5022197.ip-148-113-6.net"
+          ],
+          "http_valid": true,
+          "url": "https://www.bondstein.net",
+          "status_code": 200,
+          "live": true
+        }
+      ],
+      "axfr": [
+        {
+          "nameserver": "ns1.bondstein.net",
+          "ip": "148.113.6.224",
+          "transfer_allowed": false,
+          "records": []
+        },
+        {
+          "nameserver": "ns2.bondstein.net",
+          "ip": "148.113.6.224",
+          "transfer_allowed": false,
+          "records": []
+        }
+      ]
+    }
+  ]
+}

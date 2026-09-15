@@ -1,3 +1,4 @@
+
 import requests
 
 
@@ -7,7 +8,10 @@ import requests
 
 def validate_http_https(subdomain):
 
-    # প্রথমে HTTPS check করবে
+    # Connection reuse করার জন্য Session তৈরি
+    session = requests.Session()
+
+    # প্রথমে HTTPS, তারপর HTTP check করবে
     urls = [
         f"https://{subdomain}",
         f"http://{subdomain}"
@@ -19,9 +23,9 @@ def validate_http_https(subdomain):
         try:
 
             # Website-এ request পাঠাবে
-            response = requests.get(
+            response = session.get(
                 url,
-                timeout=5,
+                timeout=3,
                 allow_redirects=True
             )
 
@@ -30,6 +34,9 @@ def validate_http_https(subdomain):
 
             # Successful response হলে
             if 200 <= status_code < 400:
+
+                # Session বন্ধ
+                session.close()
 
                 return {
                     "http_valid": True,
@@ -42,6 +49,8 @@ def validate_http_https(subdomain):
             # এই URL কাজ না করলে পরের URL check করবে
             continue
 
+    # Session বন্ধ
+    session.close()
 
     # HTTP এবং HTTPS দুটোই fail হলে
     return {
@@ -62,3 +71,4 @@ if __name__ == "__main__":
     result = validate_http_https(subdomain)
 
     print(result)
+
