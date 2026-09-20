@@ -2,48 +2,14 @@
 
 import { useState } from "react";
 
-// --------------------------------
-// Backend result-এর type
-// --------------------------------
-
-type SubdomainResult = {
-  subdomain: string;
-  dns_valid: boolean;
-  http_valid: boolean;
-  url: string | null;
-  status_code: number | null;
-  live: boolean;
-};
-
-type ScanResult = {
-  domain: string;
-  count: number;
-  subdomains: SubdomainResult[];
-};
-
-// --------------------------------
-// Backend response-এর type
-// --------------------------------
-
-type ScanResponse = {
-  total_domains: number;
-  results: ScanResult[];
-};
-
-// --------------------------------
 // Main component
-// --------------------------------
-
 export default function Home() {
   const [domain, setDomain] = useState("");
-  const [results, setResults] = useState<ScanResult[]>([]);
+  const [results, setResults] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-  // --------------------------------
   // Scan function
-  // --------------------------------
-
   const handleScan = async () => {
     if (!domain.trim()) {
       setError("Please enter a domain.");
@@ -55,18 +21,22 @@ export default function Home() {
       setResults([]);
       setLoading(true);
 
+      // FastAPI backend-এর scan API call
       const response = await fetch(
         `http://127.0.0.1:8000/scan?domains=${encodeURIComponent(domain)}`,
       );
 
+      // Backend error হলে
       if (!response.ok) {
         throw new Error("Backend request failed.");
       }
 
-      const data: ScanResponse = await response.json();
+      // Backend থেকে JSON data নেওয়া
+      const data = await response.json();
 
       console.log("Backend response:", data);
 
+      // Backend-এর results frontend state-এ রাখা
       setResults(data.results);
     } catch (error) {
       console.error("Backend error:", error);
@@ -75,33 +45,38 @@ export default function Home() {
         "Could not connect to the backend. Please make sure the FastAPI server is running.",
       );
     } finally {
+      // Scan শেষ হলে loading বন্ধ
       setLoading(false);
     }
   };
 
-  // --------------------------------
   // JSON Download
-  // --------------------------------
-
   const handleJsonDownload = async () => {
     try {
+      // Backend-এর JSON download API call
       const response = await fetch("http://127.0.0.1:8000/download/json");
 
+      // Download error হলে
       if (!response.ok) {
         throw new Error("JSON download failed.");
       }
 
+      // Response-কে file/blob হিসেবে নেওয়া
       const blob = await response.blob();
 
+      // Temporary browser URL তৈরি
       const url = window.URL.createObjectURL(blob);
 
+      // Download link তৈরি
       const link = document.createElement("a");
 
       link.href = url;
       link.download = "results.json";
 
+      // Download শুরু
       link.click();
 
+      // Temporary URL remove
       window.URL.revokeObjectURL(url);
     } catch (error) {
       console.error("JSON download error:", error);
@@ -110,29 +85,33 @@ export default function Home() {
     }
   };
 
-  // --------------------------------
   // CSV Download
-  // --------------------------------
-
   const handleCsvDownload = async () => {
     try {
+      // Backend-এর CSV download API call
       const response = await fetch("http://127.0.0.1:8000/download/csv");
 
+      // Download error হলে
       if (!response.ok) {
         throw new Error("CSV download failed.");
       }
 
+      // Response-কে file/blob হিসেবে নেওয়া
       const blob = await response.blob();
 
+      // Temporary browser URL তৈরি
       const url = window.URL.createObjectURL(blob);
 
+      // Download link তৈরি
       const link = document.createElement("a");
 
       link.href = url;
       link.download = "results.csv";
 
+      // Download শুরু
       link.click();
 
+      // Temporary URL remove
       window.URL.revokeObjectURL(url);
     } catch (error) {
       console.error("CSV download error:", error);
@@ -141,20 +120,13 @@ export default function Home() {
     }
   };
 
-  // --------------------------------
   // Total subdomain count
-  // --------------------------------
-
   const totalSubdomains = results.reduce(
     (total, item) => total + item.subdomains.length,
     0,
   );
 
-  // --------------------------------
-  // Valid count
-  // live === true
-  // --------------------------------
-
+  // Valid count // live === true
   const validCount = results.reduce(
     (total, item) =>
       total +
@@ -162,11 +134,7 @@ export default function Home() {
     0,
   );
 
-  // --------------------------------
-  // Failed count
-  // live === false
-  // --------------------------------
-
+  // Failed count // live === false
   const failedCount = results.reduce(
     (total, item) =>
       total +
@@ -174,14 +142,8 @@ export default function Home() {
     0,
   );
 
-  // --------------------------------
-  // Page UI
-  // --------------------------------
-
   return (
     <main className="min-h-screen bg-slate-950 text-white">
-      {/* Header */}
-
       <header className="border-b border-slate-800 text-center bg-slate-950/95">
         <div className="mx-auto max-w-6xl px-6 py-6">
           <h1 className="text-2xl font-bold tracking-tight">
@@ -194,11 +156,7 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Main Content */}
-
       <div className="mx-auto max-w-6xl px-6 py-10">
-        {/* Search Section */}
-
         <section className="rounded-2xl border border-slate-800 bg-slate-900 p-6 shadow-2xl">
           <div className="mb-5">
             <h2 className="text-xl font-semibold">Scan a Domain</h2>
@@ -234,7 +192,6 @@ export default function Home() {
           </div>
 
           {/* Loading */}
-
           {loading && (
             <div className="mt-4 rounded-xl border border-blue-900 bg-blue-950/40 px-4 py-3 text-sm text-blue-300">
               Scanning... Please wait while subdomains are being discovered.
@@ -242,7 +199,6 @@ export default function Home() {
           )}
 
           {/* Error */}
-
           {error && !loading && (
             <div className="mt-4 rounded-xl border border-red-900 bg-red-950/40 px-4 py-3 text-sm text-red-300">
               {error}
@@ -251,32 +207,28 @@ export default function Home() {
         </section>
 
         {/* Statistics */}
-
         <section className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
-          {/* Found */}
-
+          {/* Total */}
           <div className="rounded-2xl text-center border border-slate-800 bg-slate-900 p-6">
-            <p className="text-sm ">Subdomains Found</p>
+            <p className="text-sm">Subdomains Found</p>
 
-            <p className="mt-3  text-4xl font-bold">{totalSubdomains}</p>
+            <p className="mt-3 text-4xl font-bold">{totalSubdomains}</p>
           </div>
 
           {/* Valid */}
-
           <div className="rounded-2xl text-center border border-slate-800 bg-slate-900 p-6">
-            <p className="text-sm r text-slate-400">Valid</p>
+            <p className="text-sm text-slate-400">Valid</p>
 
-            <p className="mt-3 text-4xl  font-bold text-green-400">
+            <p className="mt-3 text-4xl font-bold text-green-400">
               {validCount}
             </p>
 
-            <p className="mt-1  text-xs text-slate-500">
+            <p className="mt-1 text-xs text-slate-500">
               DNS + HTTP/HTTPS available
             </p>
           </div>
 
           {/* Failed */}
-
           <div className="rounded-2xl border text-center border-slate-800 bg-slate-900 p-6">
             <p className="text-sm text-slate-400">Failed</p>
 
@@ -289,10 +241,8 @@ export default function Home() {
         </section>
 
         {/* Results Section */}
-
         <section className="mt-6 overflow-hidden rounded-2xl border border-slate-800 bg-slate-900">
           {/* Results header */}
-
           <div className="flex flex-col gap-4 border-b border-slate-800 px-6 py-5 sm:flex-row sm:items-center sm:justify-between">
             <div>
               <h2 className="text-xl font-semibold">Scan Results</h2>
@@ -303,7 +253,6 @@ export default function Home() {
             </div>
 
             {/* Download buttons */}
-
             <div className="flex gap-2">
               <button
                 onClick={handleJsonDownload}
@@ -324,7 +273,6 @@ export default function Home() {
           </div>
 
           {/* Results Table */}
-
           {results.length > 0 ? (
             <div className="overflow-x-auto">
               <table className="w-full text-center">
@@ -375,7 +323,7 @@ export default function Home() {
                           )}
                         </td>
 
-                        <td className=" px-10 py-4 text-sm">
+                        <td className="px-10 py-4 text-sm">
                           {subdomain.http_valid ? (
                             <span className="text-green-400">Valid</span>
                           ) : (
@@ -383,7 +331,7 @@ export default function Home() {
                           )}
                         </td>
 
-                        <td className="px-3 py-4 text-sm ">
+                        <td className="px-3 py-4 text-sm">
                           {subdomain.live ? (
                             <span className="rounded-full bg-green-500/10 px-3 py-1 text-xs font-semibold text-green-400">
                               LIVE
